@@ -66,7 +66,7 @@
 			<!-- Just add this to the <build><plugins> section of your POM and make 
 				changes appropriately -->
 
-			<plugin>
+	<!--		<plugin>
 				<groupId>io.fabric8</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.27.2</version>
@@ -77,18 +77,18 @@
 					<!-- this is for Mac and Amazon Linux -->
 					<!-- <dockerHost>unix:///var/run/docker.sock</dockerHost> -->
 
-					<verbose>true</verbose>
+				<!--	<verbose>true</verbose> -->
 
 					<!-- Needed if pushing to DockerHub: preferred to store these in local 
 						environment (see the course) -->
 
-					<images>
+				<!--	<images>
 						<image>
 							<name>payalbnsl/springBootHibernate</name>
 							<build>
 								<dockerFileDir>${project.basedir}/src/main/resources/</dockerFileDir>
 
-								<!--copies Jar to the maven directory (uses Assembly system) -->
+								
 								<assembly>
 									<descriptorRef>artifact</descriptorRef>
 								</assembly>
@@ -120,7 +120,7 @@
 				<configuration>
 					<skip>true</skip>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 		<finalName>app</finalName>
 	</build>
